@@ -4,6 +4,8 @@ import CityList from './CityList';
 import {cityName} from './Resorces';
 import axios from 'axios';
 import SearchBox from './SearchBox';
+const cors = require ('cors');
+
 
 class App extends Component {
 

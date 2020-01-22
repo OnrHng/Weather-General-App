@@ -10,4 +10,5 @@ You have add `id` that is continuing in integer at same file 'Resorce.js'.
 
 ### Code 
 
+Api included CORS package also,
 In this project we used AccuWeather Api for current location weather. Don't need to wait. Enjoy!!
