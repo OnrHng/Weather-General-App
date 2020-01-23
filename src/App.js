@@ -42,9 +42,15 @@ class App extends Component {
     const response = await Promise.all(
       cityName.map(city => {
         return axios.get("https://api.weatherbit.io/v2.0/current", {
+          method: 'GET',
+          mode: 'no-cors',
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
+          },
           params: {
             city: `${city.name},${city.country}`,
-            key: "5601158bc86d44c48da97c8bbe8cafb2"
+            key: "86e622607fbe4c2cb9f7f71889a4d48d"
           }
         });
       })
