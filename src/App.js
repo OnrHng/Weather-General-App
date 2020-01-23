@@ -4,7 +4,6 @@ import CityList from './CityList';
 import {cityName} from './Resorces';
 import axios from 'axios';
 import SearchBox from './SearchBox';
-const cors = require ('cors');
 
 
 class App extends Component {
@@ -47,6 +46,11 @@ class App extends Component {
             city: `${city.name},${city.country}`,
             key: "5601158bc86d44c48da97c8bbe8cafb2"
           }
+          headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS,POST,PUT',
+                'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers'
+            }
         });
       })
     );
